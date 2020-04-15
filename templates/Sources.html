@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/gif/png" href="/home/kartikey/web_d/icon.png">
+    <title>ChatBot Site</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href={{ url_for('static',filename ='css/sources.css')}}>
+      <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+      {% block head %}{% endblock %}
+  </head>
+  <body>
+      {% block body %}{% endblock %}
+    <nav class="navbar navbar-inverse">
+      <ul class="nav nav-pills">
+        <li role="presentation" ><a href="{{ url_for('front_end')}}">Home</a></li>
+        <li role="presentation" ><a href="{{ url_for('chatbot')}}">ChatBot</a></li>
+        <li role="presentation" class="active"><a href="{{ url_for('Sources') }}">Sources</a></li>
+      </ul>
+    </nav>
+      <div class="container">
+        <h1>ChatBot:</h1>
+        <p>ChatBot is a virtual machine that has ability of replying to any question raised. A Chatbot is generally implemented on a Data Set which is Cornell movie dialog corpus in this case. the Data Set is so trained that each word is converted into a token and some set of words converts into neuron which are capable of answering the input question.
+          The neurons selects words depending on weights trained seperately for each data.
+        </p>
+        <br>
+        <center><img src="static/chatbot.jpeg" alt=""> </center>
+        <br>
+        <br>
+        <h2><u>Sources:</u></h2>
+        <ul>
+          <li><a href="https://www.udemy.com/">Udemy</a></li>
+          <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+          <li><a href="https://www.tensorflow.org/">TensorFlow Documentation</a></li>
+          <li>Environment Used for Traning :&ensp; python 3.5</li>
+          <li>IDE used: &ensp; Spyder 3.3.0</li>
+          <li>Libraries:</li>
+          <ul>
+            <li>Numpy</li>
+            <li>Tensorflow</li>
+            <li>Time</li>
+          </ul>
+        </ul>
+        <br>
+        <br>
+
+        <h1>Website:</h1>
+        <h2><u>Sources:</u></h2>
+        <ul>
+          <li>FrontEnd</li>
+          <ul>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://www.w3schools.com/">W3school</a></li>
+            <li><a href="https://getbootstrap.com/docs/3.4/css/">Bootstrap 3.4</a></li>
+            <li><a href="https://fonts.google.com/?selection.family=Fresca  ">Google Fonts</a> </li>
+          </ul>
+          <br>
+          <br>
+          <li>BackEnd</li>
+        </ul>
+      </div>
+
+  </body>
+</html>

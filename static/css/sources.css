@@ -1,0 +1,14 @@
+body{
+  font-family: 'Fresca', sans-serif;
+  background-color: #011627;
+  color: #FDFFFC;
+  text-align: left;
+  font-size: large;
+  border: 40px solid #2EC486;
+}
+img {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}

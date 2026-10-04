@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <header>
+    <h1>Assistant</h1>
+    <button type="button" id="new-chat" class="ghost">New chat</button>
+  </header>
+  <main id="log" aria-live="polite">
+    <p class="empty" id="empty">Ask me anything. Your conversation stays in this browser.</p>
+  </main>
+  <form id="composer">
+    <textarea id="input" rows="1" maxlength="4000" placeholder="Message the assistant" aria-label="Message" required></textarea>
+    <button type="submit" id="send">Send</button>
+    <button type="button" id="stop" class="ghost" hidden>Stop</button>
+  </form>
+  <script src="/static/app.js"></script>
+</body>
+</html>
